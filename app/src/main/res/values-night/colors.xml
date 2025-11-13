@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme_color">#2A338F</color>
+    <color name="themeColor">#2A338F</color>
+    <color name="logoColor">#2A338F</color>
+    <color name="themeColor1">#2A338F</color>
+    <color name="loginBlack">#ffffff</color>
+    <color name="whiteonly">#ffffff</color>
+
+    <color name="discount">#0FD500</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FFFFFF</color>
+    <color name="number">#0036D5</color>
+    <color name="white">#000000</color>
+    <color name="blackOnly">#000000</color>
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1E88E5</color>
+    <color name="colorAccent">#00574B</color>
+    <color name="home">#1E88E5</color>
+    <color name="light_grey">#00FFFFFF</color>
+
+    <color name="colorGrey">#AA9A9A</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#3498db</color>
+
+    <color name="bg_screen2">#E7D03C</color>
+    <color name="bg_screen3">#E4E4C8</color>
+    <color name="bg_screen4">#08C49F</color>
+    <color name="grey_light">#E0E0E0</color>
+    <color name="bg_screen6">#C4AA05</color>
+    <color name="gray">#F0EFED</color>
+    <color name="bg_color">#F3F3F3</color>
+    <color name="gray_text">#a4a5a6</color>
+    <color name="white_2">#F4F3F3</color>
+    <color name="layout_background">#ffffffff</color>
+    <color name="textcolor_light">#ff424242</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#0FAC16</color>
+    <color name="dot_dark_screen2">#8B8B8B</color>
+    <color name="dot_dark_screen3">#C54DC0</color>
+    <color name="dot_dark_screen4">#000000</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#0823AC</color>
+    <color name="dot_light_screen2">#D30A05</color>
+    <color name="dot_light_screen3">#C83F3C3C</color>
+    <color name="dot_light_screen4">#028D09</color>
+    <color name="drawablebacground">#00F3EEEE</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

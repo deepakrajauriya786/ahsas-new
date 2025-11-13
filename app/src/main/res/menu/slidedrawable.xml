@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeActivity"
+        android:icon="@drawable/myshopimage"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/passbook"
+        android:visible="false"
+        android:icon="@drawable/myshopimage"
+        android:title="@string/passbook" />
+
+    <item
+        android:id="@+id/history"
+        android:visible="false"
+        android:icon="@drawable/homeservice"
+        android:title="@string/play_history" />
+
+
+    <item
+        android:id="@+id/manage"
+        android:visible="false"
+        android:icon="@drawable/homeservice"
+        android:title="@string/manage_points" />
+    <item
+        android:id="@+id/result"
+        android:visible="false"
+
+        android:icon="@drawable/notification"
+        android:title="@string/result_chart" />
+    <item
+        android:id="@+id/winners"
+        android:visible="false"
+
+        android:icon="@drawable/win"
+        android:title="@string/winners" />
+
+
+    <item
+        android:id="@+id/gameRate"
+        android:visible="false"
+
+        android:icon="@drawable/homeservice"
+        android:title="@string/game_rates" />
+
+    <item
+        android:id="@+id/howToPlay"
+        android:visible="false"
+
+        android:icon="@drawable/homeservice"
+        android:title="@string/how_to_play" />
+
+
+
+    <item
+        android:id="@+id/mybooking"
+        android:icon="@drawable/homeservice"
+        android:title="@string/my_appointment_bookings"/>
+    <item
+        android:id="@+id/Themes"
+        android:icon="@drawable/homeservice"
+        android:title="Withdraw Request" />
+  <item
+        android:id="@+id/settings"
+        android:icon="@drawable/homeservice"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/homeservice"
+        android:title="@string/feedback" />
+
+    <item
+        android:id="@+id/privacy"
+        android:icon="@drawable/privacypolicy"
+        android:title="@string/rate_app" />
+
+    <item
+        android:id="@+id/helpMain"
+        android:icon="@drawable/helpcentre"
+        android:title="@string/help_centre" />
+
+
+    <item
+        android:id="@+id/shareapp"
+        android:icon="@drawable/ic_share_black1_24dp"
+        android:title="@string/share_app" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout" />
+
+</menu>

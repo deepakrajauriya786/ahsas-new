@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/search1"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:backgroundTint="@color/bg_screen3"
+            android:focusable="true"
+            android:hint="Search Here"
+            android:inputType="text"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/linegonrqqqq"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/citydialogrecycler"/>
+
+    <TextView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="end"
+        android:text="Cancel"
+        android:padding="@dimen/_4sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/dialogapply"/>
+    </LinearLayout>
+
+</RelativeLayout>

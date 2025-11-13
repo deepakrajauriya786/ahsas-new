@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".ui.activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/themeColor"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/searchicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_arrow_back_black_24dp"
+                        app:tint="@color/white" />
+
+
+                    <TextView
+
+                        android:id="@+id/getmiihome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:text="Group Call"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/goLive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/circle_text_new"
+                            android:gravity="center_vertical"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ww"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="1dp"
+                                android:gravity="center"
+                                android:src="@drawable/conference" />
+
+
+                            <TextView
+                                android:id="@+id/notificationcount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_toRightOf="@id/ww"
+                                android:drawablePadding="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Go Live Group"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_14sdp"
+
+                                />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linBottomMenu"
+        android:layout_below="@id/appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linBottomMenu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="left"
+                    android:text="Live Call Group Join"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recLiveGroup"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "517853703130",
+    "project_id": "ahsas-35d3f",
+    "storage_bucket": "ahsas-35d3f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517853703130:android:59a965fa259a26b375eee3",
+        "android_client_info": {
+          "package_name": "in.ahsas.ahsasapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpeG5af7cIRg9g2CPPyF5Nt8NIyX46qSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

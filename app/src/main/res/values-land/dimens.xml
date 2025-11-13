@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="fab_margin">48dp</dimen>
+    <dimen name="dialog_small_width">300dp</dimen>
+    <dimen name="dialog_width">360dp</dimen>
+    <dimen name="dialog_large_width">420dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin_5">7dp</dimen>
+    <dimen name="margin_10">14dp</dimen>
+    <dimen name="margin_20">28dp</dimen>
+    <dimen name="margin_30">42dp</dimen>
+    <dimen name="margin_negative_20">-28dp</dimen>
+    <dimen name="margin_negative_30">-42dp</dimen>
+    <dimen name="margin_negative_40">-56dp</dimen>
+
+</resources>

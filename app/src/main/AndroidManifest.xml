@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Optional permissions -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- For devices running Android 12 (API level 32) or higher and integrating Agora Video SDK version v4.1.0 or lower, you also need to add the following permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- For Android 12 or higher, the following permissions are also required -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" /> <!-- Add alert window -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- Access to the internet -->
+    <!-- Access to the microphone -->
+    <!-- Access to the camera -->
+<!--    <uses-permission android:name="android.permission.CAMERA" /> &lt;!&ndash; Access to the tasks &ndash;&gt;-->
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <queries>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.upi.axispay"/>
+        <package android:name="com.axis.mobile"/>
+        <package android:name="com.fisglobal.bandhanupi.app"/>
+        <package android:name="com.bankofbaroda.upi"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="com.canarabank.mobility"/>
+        <package android:name="com.citiuat"/>
+        <package android:name="com.dbs.in.digitalbank"/>
+        <package android:name="com.olive.dcb.upi"/>
+        <package android:name="com.finopaytech.bpayfino"/>
+        <package android:name="com.freecharge.android"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.snapwork.hdfc"/>
+        <package android:name="com.mgs.hsbcupi"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.icicibank.pockets"/>
+        <package android:name="com.euronet.iobupi"/>
+        <package android:name="com.mgs.induspsp"/>
+        <package android:name="com.fss.jnkpsp"/>
+        <package android:name="com.jio.myjio"/>
+        <package android:name="com.mycompany.kvb"/>
+        <package android:name="com.kvb.mobilebanking"/>
+        <package android:name="com.lcode.smartz"/>
+        <package android:name="com.msf.kbank.mobile"/>
+        <package android:name="com.upi.federalbank.org.lotza"/>
+        <package android:name="com.infrasofttech.mahaupi"/>
+        <package android:name="com.mipay.in.wallet"/>
+        <package android:name="com.myairtelapp"/>
+        <package android:name="com.mobikwik_new"/>
+        <package android:name="com.onymy.paybee.prod"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.Version1"/>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.sbi.upi"/>
+        <package android:name="com.SIBMobile"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.infrasoft.uboi"/>
+        <package android:name="com.lcode.ucoupi"/>
+        <package android:name="com.YesBank"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="money.bullet"/>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Malka"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.WithdrawalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.UpiGatewayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.voiceCallAgora.GroupCallFetchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.voiceCallAgora.GroupCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.voiceCallAgora.CallInviteActivity"
+            android:exported="false" />
+        <activity android:name=".ui.activity.OrderSlipActivity" />
+        <activity
+            android:name=".ui.activity.WalletActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Malka.ChatRoom"
+            />
+        <activity
+            android:name=".ui.activity.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.TimeSlotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DoctorFetchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.BookingCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.HelpUs"
+            android:exported="false"
+            android:label="@string/title_activity_help_us"
+            android:theme="@style/Theme.Malka" />
+        <activity
+            android:name=".ui.activity.Setting"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ChatRoomActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Malka.ChatRoom" />
+        <activity
+            android:name=".ui.activity.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ShopLogo"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Malka.NoActionBar" />
+        <activity android:name=".ui.activity.LogIn" />
+        <activity android:name=".ui.activity.CheckInternet" />
+        <activity android:name=".ui.activity.MyAccount" />
+        <activity android:name=".ui.activity.MyProfile" />
+        <activity android:name=".ui.activity.OtpSend" />
+        <activity android:name=".ui.activity.SignUp" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.zegocloud.uikit.prebuilt.call.invitation.ZegoUIKitPrebuiltCallInvitationService"
+            android:exported="false"
+            tools:ignore="MissingClass" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>
